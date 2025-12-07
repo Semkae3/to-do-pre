@@ -50,7 +50,7 @@ function getTasksFromDOM() {
     const itemsNamesElements = listElement.querySelectorAll(".to-do__item-text");
     const tasks = [];
     
-    itemsNamesElements.forEach(function(element) {
+    itemsNamesElements.forEach(function() {
         tasks.push(element.textContent);
     });
     
@@ -68,7 +68,7 @@ items.forEach(function(item) {
     listElement.append(taskElement);
 });
 
-formElement.addEventListener('submit', function(event) {
+formElement.addEventListener('submit', function() {
     event.preventDefault();
     
     const taskText = inputElement.value.trim();
