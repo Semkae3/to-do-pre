@@ -71,7 +71,7 @@ items.forEach(function(item) {
 formElement.addEventListener('submit', function() {
     event.preventDefault();
     
-    const taskText = inputElement.value.trim();
+    const taskText = inputElement.value();
     
     if (taskText) {
         const newTask = createItem(taskText);
